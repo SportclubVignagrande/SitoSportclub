@@ -152,6 +152,71 @@
             height: 400px;
             border: 0;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img {
+                margin: 0 0 10px 0;
+                height: 60px;
+            }
+
+            header .logo-text {
+                font-size: 22px;
+            }
+
+            header .contact-info {
+                margin-left: 0;
+                font-size: 12px;
+            }
+
+            .section-container {
+                flex-direction: column;
+                width: 95%;
+            }
+
+            .section-box {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .section-box img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .section-box .text {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .location-section h2 {
+                font-size: 20px;
+            }
+
+            .location-section p {
+                font-size: 14px;
+            }
+
+            iframe {
+                height: 300px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-logo {
+                margin: 0 0 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -211,14 +276,8 @@
         <h2>La Nostra Posizione</h2>
         <p>Scopri dove ci troviamo e vieni a trovarci! Siamo facilmente raggiungibili.</p>
         <div class="map-container">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.5166520592225!2d8.694402300000002!3d44.9128279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787724a6b40255d%3A0xc737f1d729895028!2ssport%20club%20Vignagrande%20Castelceriolo%20(AL)!5e0!3m2!1sit!2sit!4v1747391576988!5m2!1sit!2sit" 
-           width="600" 
-           height="450" 
-           style="border:0;" 
-           allowfullscreen="" 
-           loading="lazy" 
-           referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.5166520592225!2d8.694402300000002!3d44.9128279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787724a6b40255d%3A0xc737f1d729895028!2ssport%20club%20Vignagrande%20Castelceriolo%20(AL)!5e0!3m2!1sit!2sit!4v1747391576988!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
         <a href="https://maps.app.goo.gl/nMKim2QdyU7b4Bf9A" target="_blank" class="button" style="align-self: flex-end; margin-top: 15px;">Vedi su Google Maps</a>
     </div>
