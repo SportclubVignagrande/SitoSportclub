@@ -70,10 +70,6 @@
             flex-grow: 1;
             text-align: center;
         }
-        .footer-contact {
-            font-size: 12px;
-            text-align: right;
-        }
         .section-container {
             display: flex;
             justify-content: center;
@@ -142,27 +138,32 @@
         .location-section p {
             font-size: 16px;
         }
-        .map-image {
+        .map-container {
             width: 100%;
-            max-width: 500px;
-            margin-top: 15px;
+            max-width: 600px;
+            margin: 20px auto 10px;
             border-radius: 6px;
+            overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="logo1.webp" alt="Logo Sport Club Vignagrande">
-        <div class="logo-text">
-            Sport Club Vignagrande
-        </div>
+        <div class="logo-text">Sport Club Vignagrande</div>
         <div class="contact-info">
             <p>Email: <a href="mailto:calciotto.castelceriolo@gmail.com">calciotto.castelceriolo@gmail.com</a></p>
-            <p>Telefono: <a href="tel:+39 328 434 4694">+39 328 434 4694</a></p>
+            <p>Telefono: <a href="tel:+393284344694">+39 328 434 4694</a></p>
         </div>
     </header>
+
     <div class="section-container">
         <div class="section-box">
             <img src="menu.jpg" alt="Piatti del ristorante">
@@ -200,20 +201,28 @@
             <img src="estate.jpg" alt="Estate in vacanza">
             <div class="text">
                 <h2>Altri nostri eventi</h2>
-                <p>Divertimento e sport assicurati! I nostri eventi, in particolare centro estivi e tanto altro offrono attività sportive, giochi per bambini e ragazzi in un ambiente sicuro e stimolante.</p>
+                <p>Divertimento e sport assicurati! I nostri eventi, in particolare centri estivi e tanto altro, offrono attività sportive e giochi per bambini e ragazzi in un ambiente sicuro e stimolante.</p>
                 <a href="eventi.html" class="button">Scopri di più</a>
             </div>
         </div>
     </div>
+
     <div class="location-section">
         <h2>La Nostra Posizione</h2>
         <p>Scopri dove ci troviamo e vieni a trovarci! Siamo facilmente raggiungibili.</p>
-        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <img src="maps.jpg" alt="Mappa della posizione" class="map-image">
-            <a href="https://maps.app.goo.gl/nMKim2QdyU7b4Bf9A" target="_blank" class="button" style="align-self: flex-end; margin-top: 15px;">Vedi su Google Maps</a>
+        <div class="map-container">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.5166520592225!2d8.694402300000002!3d44.9128279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787724a6b40255d%3A0xc737f1d729895028!2ssport%20club%20Vignagrande%20Castelceriolo%20(AL)!5e0!3m2!1sit!2sit!4v1747391576988!5m2!1sit!2sit" 
+           width="600" 
+           height="450" 
+           style="border:0;" 
+           allowfullscreen="" 
+           loading="lazy" 
+           referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         </div>
+        <a href="https://maps.app.goo.gl/nMKim2QdyU7b4Bf9A" target="_blank" class="button" style="align-self: flex-end; margin-top: 15px;">Vedi su Google Maps</a>
     </div>
-    
+
     <footer>
         <img src="logo1.webp" alt="Logo Sport Club Vignagrande" class="footer-logo">
         <div class="footer-copyright">
